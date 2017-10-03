@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap.css"  />
+    <script src="jquery.js"></script>
+
+    <style>
+    body {
+      font-family: monospace;
+    }
+    header {
+      background-image:url('qhome.jpg');
+       background-position: center center;
+      background-repeat:no-repeat;
+      background-size: cover;
+      clear: both;
+      height: 450px;
+      background-position-y:-86px; 
+    }
+ 
+
+    .navbar ul li{
+      display: inline-block;
+      padding: 5px;
+    }
+
+    .navbar ul li a {
+
+      color: white;
+      font-family: monospace;
+
+
+    }
+
+    #heading {
+      margin-top:80px;
+      margin-left: 28%;
+      font-family: monospace;
+      color: white;
+      font-weight: bolder;
+      text-decoration-style: solid;
+    }
+
+
+    #subtitle {
+      margin-left: 49%;
+      color: white;
+      font-family: monospace;
+      font-weight: bolder;
+    }
+    section {
+      background-color: #F6F6F6;
+      text-align: center;
+      padding: 30px;
+      height: 290px;
+      font-family: monospace;
+    }
+    main {
+     background-image: url('https://static.pexels.com/photos/7105/coffee-iphone-laptop-notebook.jpg');
+      background-repeat:no-repeat;
+      background-size: cover;
+      color: white;
+      padding: 10px;
+      clear: both;
+    }
+
+    h3 {
+      margin-top: 5%;
+    }
+
+
+    #name {
+      background-color: #f4f4f4;
+      color:black;
+      border-radius: 5px;
+      width: 40%;
+      padding: 5px;
+      border:1px solid black;
+    }
+    #email {
+        background-color: #f4f4f4;
+      color:black;
+      border-radius: 5px;
+      width: 40%;
+      padding: 5px;
+      border:1px solid black;
+    }
+    textarea {
+        background-color: #f4f4f4;
+      color:black;
+      border-radius: 5px;
+      width: 40%;
+      padding: 5px;
+      height: 40%;
+      border:1px solid black;
+    }
+    #submit {
+        background-color: #f4f4f4;
+      color:black;
+      border-radius: 5px;
+      width: 30%;
+      padding: 5px;
+      border:1px solid black;
+      transition: all 300ms ease-in;
+    }
+    #submit:hover{
+      background-color: black;
+      color: white;
+      transition: all 300ms ease-in;
+    }
+    </style>
+  </head>
+  <body id="dark" onload="darkmode()">
+      <header>
+      <nav class="navbar">
+       <ul>
+         <li><a href="index.html"><em>Back to Site</em></a></li>
+         <li><a href="#"><em>Twitter</em></a></li>
+         <li><a href="https://www.facebook.com/akmarwat9997"><em>Facebook</em></a></li>
+       </ul>
+       </nav>
+        <h1 id="heading"><em style="font-size: 20px;">root@marwat:~/Programmer$ </em>Abid Khan Marwat</h1>
+
+      </header>
+      <section >
+        <h2>""</h2>
+        <h3>"For Success you don,t need a beautiful face & Heroic body.All You Need is Hardwork "</h3>
+        <blockquote>-- Mr Bean;</blockquote>
+      </section>
+
+       <main>
+       <center>
+          <h2><strong>About Me</strong></h2>
+          <hr> 
+          <h3><em>Student / Aspiring Web Developer</em></h3>        
+          <hr>
+            <h4>
+               Currently studying all there is to know about Web Development. I have a passion for solving problems using technology and believe that knowledge is power. When I'm not busy coding and figuring out how things work, I tend to occupy myself with reading and Exploring.</h4>
+                  <hr>
+                  <hr>
+               <h1><strong>Contact Us<strong></h1>
+               <form action="mailto:silencemind55@gmail.com" method="POST" enctype="text/plain">
+                 <input type="text" id="name" placeholder="Name"><br><br>
+                 <input type="email" name="email" placeholder="Enter Your Email" id="email"><br><br>
+                 <textarea></textarea><br>
+                 <input type="submit" name="submit" value="Send Mail" id="submit">
+               </form>
+          </center>
+
+     </main>
+    
+  </body>
+</html>
+
+<script type="text/javascript">
+function darkmode(){
+  var date  = new Date();
+  var hour = date.getHours(); 
+
+  if (hour > 6 && hour < 18){
+        var dark = document.getElementById('dark').setAttribute("style","background-color:black;color:white;");
+
+  }else{
+    var dark = document.getElementById('dark').setAttribute("style","background-color:white;color:black;");
+  }
+}
+
+function dark(){
+      var body = document.getElementById('dark').setAttribute(
+        "style","background-color:black;color:white;");
+      var main = document.getElementById('main').setAttribute(
+        "style","background-color:black;color:white;border:1px solid white;");
+
+}
+
+</script>
